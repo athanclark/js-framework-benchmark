@@ -1,0 +1,20 @@
+{
+    "name": "js-framework-benchmark-shpadoinkle",
+    "version": "0.0.0",
+    "description": "Shpadoinkle demo",
+    "main": "index.js",
+    "js-framework-benchmark": {
+        "frameworkVersion": "0.3.0.0"
+    },
+    "scripts": {
+        "build-dev": "exit 0",
+        "build-prod": "exit 0"
+    },
+    "author": "Athan Clark",
+    "license": "BSD-3-Clause",
+    "homepage": "https://gitlab.com/athan.clark/shpaboinchkle",
+    "repository": {
+        "type": "git",
+        "url": "https://gitlab.com/athan.clark/shpaboinchkle.git"
+    }
+}
