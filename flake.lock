@@ -1,0 +1,42 @@
+{
+  "nodes": {
+    "js-framework-benchmark": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1614889173,
+        "narHash": "sha256-yfVJXed87xphsiYssBUDVpq1Sl5D8hwlLpOOlj0TBl0=",
+        "owner": "ursi",
+        "repo": "js-framework-benchmark",
+        "rev": "51a52979b6f506c75bd8135904cb28a901ac2b37",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ursi",
+        "repo": "js-framework-benchmark",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1614288967,
+        "narHash": "sha256-6Q2gH8lMzF6wMO9//2nE7v/9U2LXR2h/wDLuGpfQJ4M=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "04ac9dcd311956d1756d77f4baf9258392ee7bdd",
+        "type": "github"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "js-framework-benchmark": "js-framework-benchmark",
+        "nixpkgs": "nixpkgs"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

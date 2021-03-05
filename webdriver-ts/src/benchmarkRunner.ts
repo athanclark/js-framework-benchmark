@@ -9,6 +9,7 @@ import { executeBenchmark } from './forkedBenchmarkRunner';
 import mapObjIndexed from 'ramda/es/mapObjIndexed';
 import {writeResults} from './writeResults';
 import { resolve } from 'dns';
+import getChromeBinary from './chromeBinary'
 
 function forkAndCallBenchmark(frameworks: FrameworkData[], frameworkName: string, keyed: boolean, benchmarkName: string, benchmarkOptions: BenchmarkOptions): Promise<ErrorAndWarning> {
     return new Promise((resolve, reject) => {
@@ -179,6 +180,8 @@ let args = yargs(process.argv)
     .boolean('installed')
     .array("framework").array("benchmark")
     .argv;
+
+args.chromeBinary = getChromeBinary();
 
 console.log("args", args);
 

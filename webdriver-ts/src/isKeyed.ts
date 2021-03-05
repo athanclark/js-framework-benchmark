@@ -4,6 +4,7 @@ import {config, FrameworkData, initializeFrameworks, BenchmarkOptions} from './c
 import { WebDriver, By, WebElement } from 'selenium-webdriver';
 import * as R from 'ramda';
 import { valid } from 'semver';
+import getChromeBinary from './chromeBinary'
 
 
 let args = yargs(process.argv)
@@ -14,6 +15,8 @@ let args = yargs(process.argv)
     .string('chromeDriver')
     .boolean('headless')
     .array("framework").argv;
+
+args.chromeBinary = getChromeBinary();
 
 let allArgs = args._.length<=2 ? [] : args._.slice(2,args._.length);
 
