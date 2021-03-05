@@ -1,6 +1,7 @@
 let
   urls =
     { shpadoinkle = "https://gitlab.com/fresheyeball/Shpadoinkle";
+      shpadoinkle-clark = "https://gitlab.com/athan.clark/Shpadoinkle";
       benchmark = "https://gitlab.com/athan.clark/shpaboinchkle";
     };
 
@@ -22,5 +23,16 @@ in
           };
 
         inherit benchmark;
+      };
+    shpadoinkle-constructors =
+      { shpadoinkle = builtins.fetchGit
+          { url = urls.shpadoinkle-clark;
+            ref = "constructors";
+          };
+        benchmark = builtins.fetchGit
+          { url = urls.benchmark;
+            # this branch fixes a nix syntax error
+            ref = "constructors";
+          };
       };
   }
